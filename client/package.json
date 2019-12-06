@@ -2,6 +2,10 @@
   "name": "crwn-shop",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.4.1"
+  },
   "proxy": "http://localhost:5000",
   "dependencies": {
     "axios": "^0.19.0",
@@ -20,11 +24,8 @@
     "reselect": "^4.0.0",
     "styled-components": "^4.4.1"
   },
-  "engines": {
-    "node": ">=10.15.1 <11"
-  },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3006 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
